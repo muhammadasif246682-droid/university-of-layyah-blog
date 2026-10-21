@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Layyah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #263247;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #173b73, #087e8b);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 50%;
+            background: white;
+            padding: 5px;
+        }
+
+        nav {
+            background: #f4b942;
+            padding: 13px;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #173b73;
+            text-decoration: none;
+            margin: 5px 10px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #173b73;
+            color: white;
+        }
+
+        .hero {
+            background:
+                linear-gradient(120deg, #173b73dd, #087e8bdd),
+                url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1400&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f4b942;
+            color: #173b73;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 45px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #173b73;
+            margin-bottom: 25px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .article {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px #173b7318;
+            transition: 0.3s;
+        }
+
+        .article:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px #173b7325;
+        }
+
+        .article img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 18px;
+        }
+
+        .article h3 {
+            color: #087e8b;
+            margin-bottom: 10px;
+        }
+
+        .article p {
+            font-size: 14px;
+        }
+
+        .login-section {
+            background: linear-gradient(135deg, #e8f2ff, #e7f8f5);
+        }
+
+        .login-box {
+            max-width: 430px;
+            margin: auto;
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px #00000015;
+        }
+
+        .login-box h2 {
+            text-align: center;
+            color: #173b73;
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+        }
+
+        input:focus {
+            outline: 2px solid #087e8b;
+            border-color: #087e8b;
+        }
+
+        .login-box button {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #message {
+            margin-top: 12px;
+            color: #173b73;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #142747;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffd166;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 800px) {
+            .articles {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            section {
+                padding: 35px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img class="logo"
+         src="https://www.google.com/s2/favicons?domain=ul.edu.pk&sz=128"
+         alt="University website icon">
+
+    <h1>University of Layyah</h1>
+    <p>Knowledge • Education • Excellence</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#articles">Articles</a>
+    <a href="#login">Student Login</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to University of Layyah</h2>
+    <p>Learn today, lead tomorrow, and build a brighter future.</p>
+    <a class="btn" href="#articles">Explore Articles</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Our University</h2>
+
+    <div class="about">
+        <p>
+            The University of Layyah is located in Layyah,
+            Punjab, Pakistan. The university supports higher
+            education, academic learning, research, and
+            professional development. Students can explore
+            educational opportunities and develop skills
+            for their future careers.
+        </p>
+
+        <br>
+
+        <a class="btn" href="https://ul.edu.pk/" target="_blank"
+           rel="noopener noreferrer">
+            Official Website
+        </a>
+    </div>
+</section>
+
+<section id="articles">
+    <h2 class="section-title">Educational Articles</h2>
+
+    <div class="articles">
+
+        <div class="article">
+            <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+                alt="University students on campus">
+
+            <div class="article-content">
+                <h3>1. Student Success and Study Skills</h3>
+                <p>
+                    1. Set clear academic goals.<br>
+                    2. Create a realistic study timetable.<br>
+                    3. Review notes after each class.<br>
+                    4. Ask questions when a topic is unclear.<br>
+                    5. Practise with past papers.<br>
+                    6. Take short breaks while studying.<br>
+                    7. Join useful study groups.<br>
+                    8. Keep books and notes organised.<br>
+                    9. Get enough sleep before exams.<br>
+                    10. Celebrate progress and keep learning.
+                </p>
+            </div>
+        </div>
+
+        <div class="article">
+            <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                alt="Laptop used for digital learning">
+
+            <div class="article-content">
+                <h3>2. Digital Learning and Computer Skills</h3>
+                <p>
+                    1. Use trusted educational websites.<br>
+                    2. Learn word processing and spreadsheets.<br>
+                    3. Organise files into clear folders.<br>
+                    4. Attend online lectures when available.<br>
+                    5. Use digital libraries for research.<br>
+                    6. Check facts before sharing information.<br>
+                    7. Protect accounts with strong passwords.<br>
+                    8. Respect copyright and cite sources.<br>
+                    9. Collaborate through learning platforms.<br>
+                    10. Balance screen time with offline study.
+                </p>
+            </div>
+        </div>
+
+        <div class="article">
+            <img
+                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80"
+                alt="Scientific research equipment in a laboratory">
+
+            <div class="article-content">
+                <h3>3. Research, Innovation and Community</h3>
+                <p>
+                    1. Start with a focused research question.<br>
+                    2. Read reliable academic sources.<br>
+                    3. Record information accurately.<br>
+                    4. Compare evidence before reaching conclusions.<br>
+                    5. Work ethically and honestly.<br>
+                    6. Share findings in clear language.<br>
+                    7. Welcome feedback from teachers and peers.<br>
+                    8. Explore solutions to local challenges.<br>
+                    9. Respect people who take part in studies.<br>
+                    10. Use knowledge to benefit society.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="login-section" id="login">
+    <div class="login-box">
+        <h2>Student Login</h2>
+
+        <form id="loginForm">
+            <label for="email">Student Gmail / Email</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"
+                   placeholder="Enter your password" required>
+
+            <button class="btn" type="submit">Login</button>
+
+            <p id="message" aria-live="polite"></p>
+        </form>
+
+        <p style="font-size:12px; margin-top:15px;">
+            Demo form only. It is not connected to the
+            university login system and does not save passwords.
+            Use the official university website for real access.
+        </p>
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>University of Layyah</h2>
+    <p>Email: info@ul.edu.pk</p>
+    <p>Address: University of Layyah, Layyah, Punjab, Pakistan</p>
+    <p>For official contact details and campus directions, visit:</p>
+    <p>
+        <a href="https://ul.edu.pk/" target="_blank"
+           rel="noopener noreferrer">Official University Website</a>
+    </p>
+    <br>
+    <p>&copy; 2026 University of Layyah Website Demo</p>
+</footer>
+
+<script>
+    document.getElementById("loginForm").addEventListener(
+        "submit",
+        function(event) {
+            event.preventDefault();
+
+            document.getElementById("message").textContent =
+                "This is a demo. No login request was sent. " +
+                "Please use the official university portal.";
+
+            this.reset();
+        }
+    );
+</script>
+
+</body>
+</html>
